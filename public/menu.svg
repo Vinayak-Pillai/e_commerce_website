@@ -1,0 +1,8 @@
+<svg
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+>
+    <path d="M8 1a7 7 0 1 1-7 7 7 7 0 0 1 7-7m0-1a8 8 0 1 0 8 8 8 8 0 0 0-8-8z" fill="#4EC33D"/>
+    <path d="M4 6h8v1H4zM4 8h8v1H4zM4 10h8v1H4z" fill="#4EC33D"/>
+</svg>

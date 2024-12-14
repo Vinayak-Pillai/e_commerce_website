@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
@@ -14,13 +14,14 @@ import StoreProvider from "./StoreProvider";
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
-const montaga = localFont({
-  src: "./fonts/Montaga-Regular.ttf",
-  variable: "--font-montaga-regular",
-  weight: "100 900",
-});
+// const montaga = localFont({
+//   src: "./fonts/Montaga-Regular.ttf",
+//   variable: "--font-montaga-regular",
+//   weight: "100 900",
+// });
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: [`latin`, `latin-ext`],
 });
 
 export const metadata: Metadata = {

@@ -101,15 +101,17 @@ export default function Home() {
     //     </a>
     //   </footer>
     // </div>
-    <div className="relative">
-      <Header />
-      <CartItemSelection />
-      {/* <Banner /> */}
-      <div className="w-full md:w-11/12 mx-auto relative top-[90px]">
-        <Banner />
-        <ListCategories />
-        <QuickBuy />
+    <>
+      <div className="relative">
+        <Header />
+        <CartItemSelection />
+        {/* <Banner /> */}
+        <div className="w-full md:w-11/12 mx-auto relative top-[90px]">
+          <Banner />
+          <ListCategories />
+          <QuickBuy />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

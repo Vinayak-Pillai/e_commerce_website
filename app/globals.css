@@ -79,3 +79,25 @@ body {
     scrollbar-width: none;
   }
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #4ec33d;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #bbebb3;
+    border-radius: 100vh;
+    border: 1px solid transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #bcebb3a3;
+  }
+}

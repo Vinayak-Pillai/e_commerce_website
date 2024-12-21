@@ -40,6 +40,7 @@ export default {
       colors: {
         primaryColor: "#4EC33D",
         fontColor: "#18181b",
+        secondaryFontColor: "#9ca3af",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

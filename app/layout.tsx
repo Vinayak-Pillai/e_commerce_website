@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>
+      <body className={`${poppins.className} scrollbar antialiased`}>
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>

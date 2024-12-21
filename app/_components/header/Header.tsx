@@ -6,7 +6,7 @@ import UserInfo from "_components/header/UserInfo";
 export default function Header() {
   return (
     <div className="fixed z-50 w-[100%]">
-      <div className=" bg-white grid grid-cols-[50%,50%] md:grid-cols-[30%,50%,20%] h-[50px] md:h-[70px] md:border md:border-b-gray-300 ">
+      <div className=" bg-white grid grid-cols-[50%,50%] md:grid-cols-[30%,20%,50%] h-[50px] md:h-[70px] md:border md:border-b-gray-300 ">
         <div className="flex justify-left">
           <Menu />
         </div>

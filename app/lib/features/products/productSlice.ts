@@ -35,25 +35,17 @@ const productSlice = createSlice({
       >
     ) {
       if (payload.type == "single") {
-        // used for-of to avoid looping other items if selected item found
         const productIndex = state.cartItems.findIndex((cartObj) => {
           return cartObj.productId == payload.productId;
         });
-
         if (productIndex >= 0) {
           state.cartItems[productIndex] = {
             ...state.cartItems[productIndex],
             cartQty: state.cartItems[productIndex].cartQty + 1,
           };
         } else {
-          state.cartItems.push(payload.cartItem);
+          state.cartItems.push({ ...payload.cartItem, cartQty: 1 });
         }
-        // for (const cartObj of state.cartItems) {
-        //   if (cartObj.productId == payload.productId) {
-        //     cartObj["cartQty"] += cartObj["cartQty"];
-        //     return;
-        //   }
-        // }
       } else {
         state.cartItems.push(...payload.cartItems);
       }

@@ -33,6 +33,7 @@ export default function QuickBuyItemContainer({
             cartItem: productUpdateObj,
           })
         );
+
         return { ...productUpdateObj, cartQty: productUpdateObj.cartQty + 1 };
       }
 

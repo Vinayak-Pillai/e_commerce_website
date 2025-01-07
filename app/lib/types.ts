@@ -15,7 +15,7 @@ export interface ICategory {
 export interface IProducts {
   productId: number;
   productName: string;
-  productImage: StaticImageData | string;
+  productImage: StaticImageData;
   categoryId: number | string;
   inStock: boolean;
   cartQty: number;

@@ -39,8 +39,13 @@ export default {
       },
       colors: {
         primaryColor: "#4EC33D",
+        primaryColorLightShade: "#dbf8d7",
+        secondaryColor: "#334155",
+        tertiaryColor: "#be185d",
+        tertiaryColorLightShade: "#fbcfe8",
         fontColor: "#18181b",
         secondaryFontColor: "#9ca3af",
+        starIconColor: "#fde047",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

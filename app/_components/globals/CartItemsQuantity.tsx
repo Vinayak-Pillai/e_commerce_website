@@ -1,5 +1,6 @@
+"use client";
 export default function CartItemsQuantity({
-  qty,
+  qty = 0,
   productId,
   handleQuantityClick,
 }: {

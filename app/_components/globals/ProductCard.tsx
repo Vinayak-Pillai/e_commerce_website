@@ -64,7 +64,8 @@ export default function ProductCard({
             {product.productName}
           </div>
           <div className="font-bold text-sm text-slate-700">
-            ₹. {product.price}
+            <span className="line-through mr-1">₹. {product.price} </span>
+            {"  "} ₹. {product.price}
           </div>
         </div>
 

@@ -1,4 +1,3 @@
-import Header from "_components/header/Header";
 import ListCategories from "_components/categories/ListCategories";
 import QuickBuy from "_components/quickbuy/QuickBuy";
 import Banner from "_components/banners/Banner";
@@ -103,14 +102,14 @@ export default function Home() {
     // </div>
     <>
       <div className="relative">
-        <Header />
+        {/* <Header /> */}
         <CartItemSelection />
         {/* <Banner /> */}
-        <div className="w-full md:w-11/12 mx-auto relative top-[90px]">
-          <Banner />
-          <ListCategories />
-          <QuickBuy />
-        </div>
+        {/* <div className="w-full md:w-11/12 mx-auto relative top-[90px]"> */}
+        <Banner />
+        <ListCategories />
+        <QuickBuy />
+        {/* </div> */}
       </div>
     </>
   );

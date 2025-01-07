@@ -37,14 +37,14 @@ export default function Banner() {
       <CarouselNext /> */}
       </Carousel>
       <div className="right-banner-container hidden lg:flex flex-col justify-between">
-        <div className="top-banner h-[245px] bg-primaryColor w-100 rounded-lg">
+        <div className="top-banner h-[245px] bg-secondaryColor w-100 rounded-lg">
           <Image
             className="h-[100%] w-[100%] rounded-lg"
             src={right_banner_1}
             alt="temp_image"
           />
         </div>
-        <div className="top-banner h-[245px] bg-primaryColor w-100 rounded-lg">
+        <div className="top-banner h-[245px] bg-secondaryColor w-100 rounded-lg">
           <Image
             className="h-[100%] w-[100%] rounded-lg"
             src={right_banner_2}

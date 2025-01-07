@@ -4,6 +4,7 @@ import { updateCartItem } from "@/lib/features/products/productSlice";
 import { useAppDispatch } from "@/lib/hooks/storeHooks";
 import ProductCard from "_components/globals/ProductCard";
 import ProductSkeletonLoader from "_components/globals/ProductSkeletonLoader";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function QuickBuyItemContainer({
@@ -12,6 +13,7 @@ export default function QuickBuyItemContainer({
   categoryId: number;
 }) {
   const [productsData, setProductsData] = useState(produtsData);
+  const router = useRouter();
 
   useEffect(() => {
     const filteredProductsData = produtsData.filter((productsObj) => {
@@ -50,11 +52,17 @@ export default function QuickBuyItemContainer({
             (productsObj, productIndex) => {
               if (productsObj.categoryId == categoryId) {
                 return (
-                  <ProductCard
-                    product={productsObj}
+                  <div
                     key={productIndex}
-                    increaseCartQty={handleCountUpdate}
-                  />
+                    onClick={() => {
+                      return router.push(`/product/${productsObj.productId}`);
+                    }}
+                  >
+                    <ProductCard
+                      product={productsObj}
+                      increaseCartQty={handleCountUpdate}
+                    />
+                  </div>
                 );
               }
             }

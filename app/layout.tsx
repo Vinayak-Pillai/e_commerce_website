@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
+import Header from "./_components/header/Header";
+import Container from "./_components/globals/Container";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -37,7 +39,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} scrollbar antialiased`}>
-        <StoreProvider>{children}</StoreProvider>
+        <StoreProvider>
+          <Header />
+          <Container>{children}</Container>
+        </StoreProvider>
       </body>
     </html>
   );
